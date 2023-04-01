@@ -1,0 +1,22 @@
+\BOOKMARK [1][-]{section.1}{What's a file?}{}% 1
+\BOOKMARK [1][-]{section.2}{What's a file system?}{}% 2
+\BOOKMARK [1][-]{section.3}{Processing a file in python}{}% 3
+\BOOKMARK [2][-]{subsubsection.3.0.1}{The syntax for opening a file}{section.3}% 4
+\BOOKMARK [3][-]{subsubsection.3.0.2}{Examples:}{subsubsection.3.0.1}% 5
+\BOOKMARK [2][-]{subsection.3.1}{2. Reading from the file}{section.3}% 6
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Examples}{subsection.3.1}% 7
+\BOOKMARK [2][-]{subsection.3.2}{3. Writing to the file}{section.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Line Endings}{subsection.3.2}% 9
+\BOOKMARK [1][-]{section.4}{File Positions}{}% 10
+\BOOKMARK [1][-]{section.5}{Renaming and Deleting Files}{}% 11
+\BOOKMARK [1][-]{section.6}{Directories in Python}{}% 12
+\BOOKMARK [2][-]{subsection.6.1}{The mkdir\(\) Method}{section.6}% 13
+\BOOKMARK [2][-]{subsection.6.2}{The chdir\(\) Method}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.3}{The getcwd\(\) Method}{section.6}% 15
+\BOOKMARK [2][-]{subsection.6.4}{The rmdir\(\) Method}{section.6}% 16
+\BOOKMARK [3][-]{subsubsection.6.4.1}{open files using with statement}{subsection.6.4}% 17
+\BOOKMARK [1][-]{section.7}{Introduction to Exceptions and Error Handling}{}% 18
+\BOOKMARK [2][-]{subsection.7.1}{Using try-except Blocks to Handle Exceptions}{section.7}% 19
+\BOOKMARK [2][-]{subsection.7.2}{Handling Multiple Types of Exceptions}{section.7}% 20
+\BOOKMARK [2][-]{subsection.7.3}{Using finally Blocks}{section.7}% 21
+\BOOKMARK [2][-]{subsection.7.4}{Raising Exceptions}{section.7}% 22
