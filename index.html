@@ -1,31 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>My Website</title>
+    <title>Lectures by Djemmada Yahia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    <header>
+      <img src="university_logo.png" alt="University Logo">
+      <h1>Lectures by Djemmada Yahia</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#lectures">Lectures</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-        <h1>Welcome to My Website</h1>  
-        <p>This is my new website which is hosted on GitHub Pages!</p>
-        <h1>List of Lectures</h1>
-    <ul>
-      <li>
-        <h2>Lecture 1: Introduction to HTML</h2>
-        <a href="https://ydjemmada.github.io/Worksheet%200%20Python%20review_Solutions.pdf">Download PDF</a>
-      </li>
-      <li>
-        <h2>Lecture 2: Advanced HTML</h2>
-        <a href="https://ydjemmada.github.io/Worksheet%200%20Python%20review_Solutions.pdf">Download PDF</a>
-      </li>
-      <li>
-        <h2>Lecture 3: Introduction to CSS</h2>
-        <a href="https://ydjemmada.github.io/Worksheet%200%20Python%20review_Solutions.pdf">Download PDF</a>
-      </li>
-    </ul>
+      <section id="about">
+        <div class="profile">
+          <img src="profile_image.png" alt="Profile Image">
+          <div class="bio">
+            <h2>Djemmada Yahia</h2>
+            <p>I am a lecturer at the National Higher School of Mathematics. I have a PhD in Mathematics from the University of Algiers and my research interests include Algebraic Geometry and Number Theory.</p>
+            <p>You can find more information about my research on my <a href="https://www.researchgate.net/profile/Yahia-Djemmada">ResearchGate</a> profile.</p>
+            <p>You can also connect with me on <a href="https://www.facebook.com/djemmada.yahia/">Facebook</a>.</p>
+          </div>
+        </div>
+      </section>
+      <section id="lectures">
+        <h2>Lectures</h2>
+        <ul>
+          <li>
+            <h3>Lecture 1: Introduction to Algebraic Geometry</h3>
+            <p>A beginner's guide to algebraic geometry, covering basic concepts such as affine varieties and projective varieties.</p>
+            <a href="lecture1.pdf" download>Download PDF</a>
+          </li>
+          <li>
+            <h3>Lecture 2: Introduction to Number Theory</h3>
+            <p>An introduction to number theory, covering topics such as prime numbers, congruences, and Diophantine equations.</p>
+            <a href="lecture2.pdf" download>Download PDF</a>
+          </li>
+          <li>
+            <h3>Lecture 3: Advanced Algebraic Geometry</h3>
+            <p>An advanced course in algebraic geometry, covering topics such as sheaf cohomology, the Riemann-Roch theorem, and the Hodge decomposition.</p>
+            <a href="lecture3.pdf" download>Download PDF</a>
+          </li>
+        </ul>
+      </section>
     </main>
+    <footer>
+      <p>Created by Djemmada Yahia</p>
+      <p><a href="https://www.researchgate.net/profile/Yahia-Djemmada">ResearchGate</a> | <a href="https://www.facebook.com/djemmada.yahia/">Facebook</a></p>
+    </footer>
   </body>
 </html>
