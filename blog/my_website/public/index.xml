@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Yahia Djemmada</title>
+    <link>https://mathxro.github.io/</link>
+    <description>Recent content in About on Yahia Djemmada</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://mathxro.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>https://mathxro.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mathxro.github.io/contact/</guid>
+      <description> Email: yahia.djemmada@nhsm.edu.dz Phone: &amp;#43;213(0)783758240 Mailing Address National Higher School of Mathematics, P.O.Box 75
+Mahelma 16093, Sidi Abdellah
+Algiers, Algeria
+Social Researchgate Google scholar LinkedIn </description>
+    </item>
+    
+    <item>
+      <title>Mct Lectures</title>
+      <link>https://mathxro.github.io/mct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mathxro.github.io/mct/</guid>
+      <description>Lecture 0: Introduction to python Part 1 (Python basics review): Download
+Part 2: Download
+Part 3: Download
+Lecture 1 Lecture 2 Lecture 3 Lecture 4 Lecture 5 Lecture 6 Lecture 7 </description>
+    </item>
+    
+  </channel>
+</rss>
