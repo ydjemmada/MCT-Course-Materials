@@ -1,0 +1,6 @@
+[submodule "blog/my_website/themes/researcher"]
+	path = blog/my_website/themes/researcher
+	url = https://github.com/ojroques/hugo-researcher.git
+[submodule "blog/my_website/public"]
+	path = blog/my_website/public
+	url = https://github.com/ydjemmada/ydjemmada.github.io.git
