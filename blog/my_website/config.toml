@@ -13,7 +13,7 @@ googleAnalytics = ""  # add your tracking id
   logo = ""  # url or path to a logo to put in the header
   [params.footer]
     text = "By Yahia Djemmada"
-    url = "ydjemmada.github.io"
+    url = "mathxro.github.io"
   [params.style]  # appearance options (can be omitted)
     fontFamily = "Inconsolata"
     fontSize = "14pt"
