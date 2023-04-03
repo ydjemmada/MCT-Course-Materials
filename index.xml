@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About Me on Yahia Djemmada</title>
+    <title>Yahia Djemmada</title>
     <link>https://ydjemmada.github.io/</link>
-    <description>Recent content in About Me on Yahia Djemmada</description>
+    <description>Recent content on Yahia Djemmada</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://ydjemmada.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contact</title>
@@ -23,7 +23,7 @@ Social Researchgate Google scholar LinkedIn </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ydjemmada.github.io/mct/</guid>
-      <description>Lecture 0: Introduction to python Part 1 (Python basics review) PDF . Part 2 (Data Structures) PDF . Part 3 (Comprehensions and Functions) PDF . Lecture 1: Files and Exceptions PDF . Lecture 2: Lecture 3 Lecture 3 Lecture 4 Lecture 5 Lecture 6 Lecture 7 </description>
+      <description>Lecture 0: Introduction to python Part 1 (Python basics review) PDF . Part 2 (Data Structures) PDF . Part 3 (Comprehensions and Functions) PDF . Lecture 1: Files and Exceptions PDF . Lecture 2:Introduction to numpy and scipy PDF . </description>
     </item>
     
   </channel>
