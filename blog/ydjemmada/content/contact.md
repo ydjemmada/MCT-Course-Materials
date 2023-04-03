@@ -2,12 +2,19 @@
 title = "Contact"
 +++
 
+<center>
+<h2> Contact</h2>
+</center>
+
 * Email: [yahia.djemmada@nhsm.edu.dz](mailto:yahia.djemmada@nhsm.edu.dz)
-* Phone: [+213(0)783758240](tel:+213(0)783758240)
+* Telegram: [@mathxro](https://t.me/mathxro)
 
 ---
 
-## Mailing Address
+
+<center>
+<h2> Mailing Address</h2>
+</center>
 
 > National Higher School of Mathematics, P.O.Box 75
 >
@@ -17,8 +24,9 @@ title = "Contact"
 
 ---
 
-## Social
-
-1. [Researchgate](https://www.researchgate.net/profile/Yahia-Djemmada)
-2. [Google scholar](https://scholar.google.com/citations?user=3kStp0sAAAAJ&hl=en)
-3. [LinkedIn](https://www.linkedin.com/in/yahiadjemmada/)
+<center>
+<h2> Social</h2>
+</center>
+<center>
+|{{% button href="https://www.researchgate.net/profile/Yahia-Djemmada" icon-position="left" icon="ai ai-researchgate" %}}Researchgate{{% /button%}}|{{% button href="https://scholar.google.com/citations?user=3kStp0sAAAAJ&hl=en" icon-position="left" icon="ai ai-google-scholar" %}}Google scholar{{% /button%}}|{{% button href="https://www.linkedin.com/in/yahiadjemmada/" icon-position="left" icon="fab fa-linkedin" %}}LinkedIn{{% /button%}}|
+</center>
