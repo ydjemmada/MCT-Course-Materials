@@ -1,4 +1,4 @@
-title = "Yahia Djemmada"
+title = "YAHIA DJEMMADA"
 baseURL = "https://ydjemmada.github.io/"
 theme = "researcher"
 disableKinds = ["taxonomy", "term"]
@@ -7,18 +7,19 @@ math = false          # enable KaTeX (https://katex.org/) globally
 googleAnalytics = ""  # add your tracking id
 
 [params]
-  author = "Yahia Djemmada"
-  description = "A simple monospaced resume theme for Hugo."
+  author = "YAHIA DJEMMADA"
+  description = "#"
   favicon = "favicon.ico"  # path to a .ico to use as favicon
-  logo = ""  # url or path to a logo to put in the header
+  logo = "/avatar.png"  # url or path to a logo to put in the header
   [params.footer]
     text = "By Yahia Djemmada"
     url = "ydjemmada.github.io"
+    imgurl="/logo.png"
   [params.style]  # appearance options (can be omitted)
     fontFamily = "Inconsolata"
     fontSize = "14pt"
     pageWidth = "750px"
-    avatarSize = "90px"
+    avatarSize = "90px" 
     colorBlack = "#222222"
     colorRed = "#dc3545"
   [[params.socialIcons]]

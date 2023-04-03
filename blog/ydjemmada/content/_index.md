@@ -1,10 +1,10 @@
 +++
-title = "Yahia Djemmada"
+title = "YAHIA DJEMMADA"
 +++
 
 ## About Me
 
-{{< figure class="avatar" src="/avatar.png" alt="avatar">}}
+<!--{{< figure class="avatar" src="/avatar.png" alt="avatar">}}-->
 
 Hello and welcome to my website! My name is Yahia Djemmada, and I'm a lecturer at the National Higher School of Mathematics ([NHSM](http://nhsm.edu.dz/)) in Algiers, Algeria.
 
