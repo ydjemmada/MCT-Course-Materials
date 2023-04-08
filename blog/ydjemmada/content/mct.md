@@ -18,5 +18,6 @@ title = "MCT Lectures"
    - ##### Worksheet 0:{{% button href="../ws/WS_0.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
    - ##### Worksheet 0 Solutions:{{% button href="../ws/WS_0_Sol.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
    - ##### Worksheet 1:{{% button href="../ws/WS_1.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
+   - ##### Worksheet 2:{{% button href="../ws/WS_2.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
 - #### Labworks:
    - ##### Labwork 01:{{% button href="../ws/LW_1.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
