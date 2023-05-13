@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>YAHIA DJEMMADA</title>
+    <link>https://ydjemmada.github.io/</link>
+    <description>Recent content on YAHIA DJEMMADA</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ydjemmada.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>https://ydjemmada.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ydjemmada.github.io/contact/</guid>
+      <description> Contact Email: yahia.djemmada@nhsm.edu.dz Telegram: @mathxro Mailing Address National Higher School of Mathematics, P.O.Box 75
+Mahelma 16093, Sidi Abdellah
+Algiers, Algeria
+Social | Researchgate | Google scholar | LinkedIn | </description>
+    </item>
+    
+    <item>
+      <title>MCT Lectures</title>
+      <link>https://ydjemmada.github.io/mct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ydjemmada.github.io/mct/</guid>
+      <description>Mathematical Computing Tools Lectures Lecture 0: Introduction to python Part 1 (Python basics review) PDF . Part 2 (Data Structures) PDF . Part 3 (Comprehensions and Functions) PDF . Lecture 1: Files and Exceptions PDF . Lecture 2:Introduction to numpy and scipy PDF . Worksheets and Labworks: Worksheets: Worksheet 0: PDF . Worksheet 0 Solutions: PDF . Worksheet 1: PDF . Worksheet 2: PDF . Labworks: Labwork 01: PDF .</description>
+    </item>
+    
+  </channel>
+</rss>
