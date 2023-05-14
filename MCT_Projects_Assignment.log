@@ -3,8 +3,8 @@ entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/mathxro/MCT/MCT_Projects.tex
-(/home/mathxro/MCT/MCT_Projects.tex
+**/home/mathxro/MCT/MCT_Projects_Assignment.tex
+(/home/mathxro/MCT/MCT_Projects_Assignment.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/exam/exam.cls
 Document Class: exam 2017/12/17 Version 2.603 by Philip Hirschhorn
@@ -665,8 +665,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip79
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 22.
-Package hyperref Info: Option `colorlinks' set `true' on input line 22.
+Package hyperref Info: Option `breaklinks' set `true' on input line 23.
+Package hyperref Info: Option `colorlinks' set `true' on input line 23.
  (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
@@ -712,25 +712,25 @@ Package: ulem 2019/11/18
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count364
 \l__pdf_internal_box=\box112
-) (/home/mathxro/MCT/MCT_Projects.aux)
-\openout1 = `MCT_Projects.aux'.
+) (/home/mathxro/MCT/MCT_Projects_Assignment.aux)
+\openout1 = `MCT_Projects_Assignment.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count365
@@ -758,10 +758,10 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into your preamble.
- on input line 88.
+ on input line 89.
 
 \AtBeginShipoutBox=\box114
-Package hyperref Info: Link coloring ON on input line 88.
+Package hyperref Info: Link coloring ON on input line 89.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -771,12 +771,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count371
 )
-LaTeX Info: Redefining \ref on input line 88.
-LaTeX Info: Redefining \pageref on input line 88.
-LaTeX Info: Redefining \nameref on input line 88.
- (/home/mathxro/MCT/MCT_Projects.out) (/home/mathxro/MCT/MCT_Projects.out)
+LaTeX Info: Redefining \ref on input line 89.
+LaTeX Info: Redefining \pageref on input line 89.
+LaTeX Info: Redefining \nameref on input line 89.
+ (/home/mathxro/MCT/MCT_Projects_Assignment.out) (/home/mathxro/MCT/MCT_Projects_Assignment.out)
 \@outlinefile=\write4
-\openout4 = `MCT_Projects.out'.
+\openout4 = `MCT_Projects_Assignment.out'.
 
 
 *geometry* driver: auto-detecting
@@ -813,100 +813,41 @@ LaTeX Info: Redefining \nameref on input line 88.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/home/mathxro/MCT/proj1.tex
-<sliding_puzzle.png, id=35, 225.84375pt x 225.84375pt>
-File: sliding_puzzle.png Graphic file (type png)
-<use sliding_puzzle.png>
-Package pdftex.def Info: sliding_puzzle.png  used on input line 9.
-(pdftex.def)             Requested size: 112.92159pt x 112.92159pt.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 16.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-<nature.jpeg, id=36, 1606.0pt x 2140.99875pt>
-File: nature.jpeg Graphic file (type jpg)
-<use nature.jpeg>
-Package pdftex.def Info: nature.jpeg  used on input line 19.
-(pdftex.def)             Requested size: 141.32353pt x 188.40193pt.
-<image_croped.png, id=38, 281.05pt x 281.05pt>
-File: image_croped.png Graphic file (type png)
-<use image_croped.png>
-Package pdftex.def Info: image_croped.png  used on input line 25.
-(pdftex.def)             Requested size: 140.52464pt x 140.52464pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
- </home/mathxro/MCT/sliding_puzzle.png> </home/mathxro/MCT/nature.jpeg>]
-<image_order.png, id=55, 366.36874pt x 281.05pt>
-File: image_order.png Graphic file (type png)
-<use image_order.png>
-Package pdftex.def Info: image_order.png  used on input line 33.
-(pdftex.def)             Requested size: 183.18391pt x 140.52464pt.
-<image_slides.png, id=56, 366.36874pt x 281.05pt>
-File: image_slides.png Graphic file (type png)
-<use image_slides.png>
-Package pdftex.def Info: image_slides.png  used on input line 41.
-(pdftex.def)             Requested size: 183.18391pt x 140.52464pt.
- [2 </home/mathxro/MCT/image_croped.png> </home/mathxro/MCT/image_order.png> </home/mathxro/MCT/image_slides.png>]) (/home/mathxro/MCT/proj2.tex
-<med_1.jpg, id=65, 3252.15pt x 2168.1pt>
-File: med_1.jpg Graphic file (type jpg)
-<use med_1.jpg>
-Package pdftex.def Info: med_1.jpg  used on input line 24.
-(pdftex.def)             Requested size: 150.56305pt x 100.3723pt.
-<enc_med_1.png, id=67, 416.55624pt x 281.05pt>
-File: enc_med_1.png Graphic file (type png)
-<use enc_med_1.png>
-Package pdftex.def Info: enc_med_1.png  used on input line 34.
-(pdftex.def)             Requested size: 200.75073pt x 135.4471pt.
- [3 </home/mathxro/MCT/med_1.jpg> </home/mathxro/MCT/enc_med_1.png>]) (/home/mathxro/MCT/proj3.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 93.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 93.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [4]) (/home/mathxro/MCT/proj4.tex
-<red_border.png, id=85, 630.1944pt x 502.9992pt>
-File: red_border.png Graphic file (type png)
-<use red_border.png>
-Package pdftex.def Info: red_border.png  used on input line 62.
-(pdftex.def)             Requested size: 110.4129pt x 88.12595pt.
-<green_border.png, id=86, 688.0104pt x 450.9648pt>
-File: green_border.png Graphic file (type png)
-<use green_border.png>
-Package pdftex.def Info: green_border.png  used on input line 68.
-(pdftex.def)             Requested size: 110.4129pt x 72.36916pt.
-<orange_border.png, id=87, 844.1136pt x 607.068pt>
-File: orange_border.png Graphic file (type png)
-<use orange_border.png>
-Package pdftex.def Info: orange_border.png  used on input line 74.
-(pdftex.def)             Requested size: 110.4129pt x 79.40329pt.
- [5 </home/mathxro/MCT/red_border.png> </home/mathxro/MCT/green_border.png> </home/mathxro/MCT/orange_border.png>]) (/home/mathxro/MCT/proj5.tex) (/home/mathxro/MCT/proj6.tex) [6]
-This exam contains 7 questions with 0 parts, 0 subparts, and 0 subsubparts.
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+This exam contains 0 questions with 0 parts, 0 subparts, and 0 subsubparts.
 This exam has a total of 0 points.
 This exam has a total of 0 bonus points.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
-(/home/mathxro/MCT/MCT_Projects.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
-Package rerunfilecheck Info: File `MCT_Projects.out' has not changed.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
+(/home/mathxro/MCT/MCT_Projects_Assignment.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
+Package rerunfilecheck Info: File `MCT_Projects_Assignment.out' has not changed.
 (rerunfilecheck)             Checksum: 9534070C232AA0A3F935CB7C3E3F8D46;35.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
  ) 
 Here is how much of TeX's memory you used:
- 31085 strings out of 481239
- 720831 string characters out of 5920377
- 1100024 words of memory out of 5000000
- 45739 multiletter control sequences out of 15000+600000
- 546217 words of font info for 56 fonts, out of 8000000 for 9000
+ 30914 strings out of 481239
+ 718097 string characters out of 5920377
+ 1102723 words of memory out of 5000000
+ 45615 multiletter control sequences out of 15000+600000
+ 545567 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,10n,98p,746b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on /home/mathxro/MCT/MCT_Projects.pdf (6 pages, 3191197 bytes).
+ 63i,10n,98p,757b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on /home/mathxro/MCT/MCT_Projects_Assignment.pdf (1 page, 92306 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 167 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 74 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
+ 3 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

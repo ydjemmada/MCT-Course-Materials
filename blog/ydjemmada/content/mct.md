@@ -23,3 +23,9 @@ title = "MCT Lectures"
 - #### Labworks:
    - ##### Labwork 01:{{% button href="../ws/LW_1.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
    - ##### Labwork 02:{{% button href="../ws/LW_2.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
+
+<center><h3>Projects</h3></center> 
+
+- #### Projects list:{{% button href="../projects/MCT_Projects.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
+- #### Teams:{{% button href="../projects/MCT_Teams.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.
+- #### Assignment (Projects,Team,Deadline):{{% button href="../projects/MCT_Projects_Assignment.pdf" icon-position="right" icon="fas fa-file-pdf" %}}PDF{{% /button%}}.

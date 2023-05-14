@@ -1,3 +1,4 @@
+
 \documentclass[12pt,addpoints]{exam}		%Doc : https://mirrors.ircam.fr/pub/CTAN/macros/latex/contrib/exam/examdoc.pdf
 %   \printanswers					%Comment this line to hide the answers 
 \usepackage[utf8]{inputenc}
@@ -57,7 +58,7 @@
 % Change section command behaviour
 \usepackage{titlesec,cancel}
 \usepackage[normalem]{ulem} 
-\titleformat{\section}[frame]{\bfseries\filright}{}{2mm}{\centering List Of Projects}
+\titleformat{\section}[frame]{\bfseries\filright}{}{2mm}{\centering Projects assignment}
 
 % Add a watermark if answers are shown
 % \ifprintanswers
@@ -86,25 +87,55 @@
 %
 % \title{Title}
 \begin{document}
-
 \section{}
-\subsection*{Team Projects}
-\begin{questions}
-\input{proj1}
-\input{proj2}
-\input{proj3}
-\input{proj4}
-\input{proj5}
-\input{proj6}%+project 7
-\end{questions}
-\subsection*{Individual Projects}
-You should choose one of the project: 
-\begin{itemize}
-  \item \textbf{RSA encryption scheme},
-  \item \textbf{3DES encryption scheme}, 
-  \item \textbf{EL-GAMAL encryption scheme}, 
-  \item \textbf{Diffie--Hellman key exchange.}
-\end{itemize}
+\subsection*{\centering Teams' Projects assignment}
 
-or 4 project of the 6th teams' project or join a team.
+$$
+\begin{array}{|c|c|c|}
+\hline
+\text{\bf Projects}&\text{\bf Teams}&\text{\bf Deadline}\\
+\hline
+ \text{Project 2},\text{Project 4} & \text{Team 1} & \text{20/05/2023}\\
+     \hline
+ \text{Project 2},\text{Project 3} & \text{Team 2} & \text{20/05/2023}\\
+     \hline
+ \text{Project 3},\text{Project 6} & \text{Team 3} & \text{25/05/2023}\\
+     \hline
+ \text{Project 3},\text{Project 4} & \text{Team 4} & \text{20/05/2023}\\
+     \hline
+ \text{Project 4},\text{Project 5} + \text{Project 1} & \text{Team 5} & \text{01 or 03/06/2023}\\
+     \hline
+ \text{Project 1},\text{Project 2} & \text{Team 6} & \text{20/05/2023}\\
+     \hline
+ \text{Project 2},\text{Project 5} & \text{Team 7} & \text{01 or 03/06/2023}\\
+     \hline
+ \text{Project 1},\text{Project 6} & \text{Team 8} & \text{25/05/2023}\\
+     \hline
+ \text{Project 2},\text{Project 6} & \text{Team 9} & \text{25/05/2023}\\
+     \hline
+ \text{Project 5},\text{Project 6} & \text{Team 10} & \text{01 or 03/06/2023}\\
+     \hline
+ \text{Project 1},\text{Project 4} & \text{Team 11} & \text{20/05/2023}\\
+     \hline
+ \text{Project 3},\text{Project 5} & \text{Team 12} & \text{01 or 03/06/2023}\\
+     \hline
+  \text{Lucky team }& \text{Team 13} & \text{Open}\\
+     \hline
+ \text{Project 4},\text{Project 6} & \text{Team 14} & \text{25/05/2023}\\
+     \hline
+ \text{Project 1},\text{Project 3} & \text{Team 15} & \text{20/05/2023}\\
+     \hline
+ \text{Project 1},\text{Project 5} & \text{Team 16} & \text{01 or 03/06/2023}\\
+ \hline
+\end{array}$$
+\subsection*{\centering Individual Projects assignment}
+$$
+\begin{array}{|c|c|c|}
+\hline
+\text{\bf Fullname}&\text{\bf Project}&\text{\bf Deadline}\\
+\hline
+\text{Kamli Nabil} & \text{3DES} & \text{01 or 03/06/2023}\\
+\text{Hassaine Mohammed Rassim} & \text{TBD} & \text{01 or 03/06/2023}\\
+\hline
+\end{array}$$
 \end{document}
