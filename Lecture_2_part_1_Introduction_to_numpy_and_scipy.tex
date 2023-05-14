@@ -155,7 +155,7 @@
     \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
     % Document parameters
     % Document title
-    \title{Lecture 2 - Part 1: Introduction to numpy and scipy}
+    \title{Lecture 2: Introduction to numpy}
     \date{}
     
     
@@ -836,23 +836,23 @@ $$
   \hline
 function &  Description\\
 \hline
-np.mean() &\text{ Calculates the arithmetic mean of an array along a specified
+np.mean() &\text{Calculates the arithmetic mean of an array along a specified
 axis.} \\
-np.median() &\text{ Computes the median of an array along a specified axis.} \\
-np.std() &\text{ Computes the standard deviation of an array along a specified
+np.median() &\text{Computes the median of an array along a specified axis.} \\
+np.std() &\text{Computes the standard deviation of an array along a specified
 axis.} \\
-np.var() &\text{ Computes the variance of an array along a specified axis.} \\
-np.min() &\text{ Computes the minimum value of an array along a specified
+np.var() &\text{Computes the variance of an array along a specified axis.} \\
+np.min() &\text{Computes the minimum value of an array along a specified
 axis.} \\
-np.max() &\text{ Computes the maximum value of an array along a specified
+np.max() &\text{Computes the maximum value of an array along a specified
 axis.} \\
-np.argmin() &\text{ Return the index of the minimum value} \\
-np.argmax() &\text{ Return the index of the maximum value} \\
-np.sum() &\text{ Computes the sum of all the elements in an array along a
+np.argmin() &\text{Return the index of the minimum value} \\
+np.argmax() &\text{Return the index of the maximum value} \\
+np.sum() &\text{Computes the sum of all the elements in an array along a
 specified axis.} \\
-np.prod() &\text{ Computes the product of all the elements in an array along a
+np.prod() &\text{Computes the product of all the elements in an array along a
 specified axis.} \\
-np.cumsum() &\text{ Computes the cumulative sum of the elements in an array
+np.cumsum() &\text{Computes the cumulative sum of the elements in an array
 along a specified axis.} \\
 \hline
 \end{array}
@@ -1140,6 +1140,667 @@ Here is an example:
 \end{Highlighting}
 \end{Shaded}
 
+
+\hypertarget{broadcasting-1}{%
+\subsection{Broadcasting:}\label{broadcasting-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  Broadcasting is a way to perform operations between arrays of
+  different shapes in numpy, by implicitly creating temporary arrays
+  that are compatible with the original arrays.
+\item
+  Numpy broadcasts arrays by comparing their shapes element-wise, and
+  applying the following rules:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If the shapes of the two arrays are equal, they are compatible.
+  \item
+    If one of the arrays has a size of 1 for a particular dimension, and
+    the other array has a size greater than 1 for that dimension, they
+    are compatible.
+  \item
+    If neither of the above conditions is true, a ValueError is raised.
+    \textbf{It's important to note that in broadcasting, the comparison
+    of indices is done from the right to the left}. \#\#\# Examples:
+  \end{itemize}
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Broadcasting a scalar value to a matrix:
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+
+\CommentTok{\# create a 3x3 matrix}
+\NormalTok{matrix }\OperatorTok{=}\NormalTok{ np.array([[}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{], [}\DecValTok{4}\NormalTok{, }\DecValTok{5}\NormalTok{, }\DecValTok{6}\NormalTok{], [}\DecValTok{7}\NormalTok{, }\DecValTok{8}\NormalTok{, }\DecValTok{9}\NormalTok{]])}
+
+\CommentTok{\# broadcast the scalar value 2 to the matrix}
+\NormalTok{result }\OperatorTok{=}\NormalTok{ matrix }\OperatorTok{+} \DecValTok{2}
+
+\BuiltInTok{print}\NormalTok{(result)}
+\CommentTok{\#output array([[ 3,  4,  5],}
+\CommentTok{\#              [ 6,  7,  8],}
+\CommentTok{\#              [ 9, 10, 11]])}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Broadcasting a vector to a matrix:
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+
+\CommentTok{\# create a 3x3 matrix}
+\NormalTok{matrix }\OperatorTok{=}\NormalTok{ np.array([[}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{], [}\DecValTok{4}\NormalTok{, }\DecValTok{5}\NormalTok{, }\DecValTok{6}\NormalTok{], [}\DecValTok{7}\NormalTok{, }\DecValTok{8}\NormalTok{, }\DecValTok{9}\NormalTok{]])}
+
+\CommentTok{\# create a 1{-}dimensional vector}
+\NormalTok{vector }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{10}\NormalTok{, }\DecValTok{20}\NormalTok{, }\DecValTok{30}\NormalTok{])}
+
+\CommentTok{\# broadcast the vector to the matrix}
+\NormalTok{result }\OperatorTok{=}\NormalTok{ matrix }\OperatorTok{+}\NormalTok{ vector}
+
+\BuiltInTok{print}\NormalTok{(result)}
+\CommentTok{\#output}
+\CommentTok{\#array([[11, 22, 33],}
+\CommentTok{\#       [14, 25, 36],}
+\CommentTok{\#       [17, 28, 39]])}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Broadcasting a vector to a 2-dimensional array:
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+
+\CommentTok{\# create a 2{-}dimensional array with shape (3, 2)}
+\NormalTok{arr }\OperatorTok{=}\NormalTok{ np.array([[}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{], [}\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{], [}\DecValTok{5}\NormalTok{, }\DecValTok{6}\NormalTok{]])}
+
+\CommentTok{\# create a vector with shape (2,)}
+\NormalTok{vec }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{10}\NormalTok{, }\DecValTok{20}\NormalTok{])}
+
+\CommentTok{\# broadcast the vector to the array}
+\NormalTok{result }\OperatorTok{=}\NormalTok{ arr }\OperatorTok{+}\NormalTok{ vec}
+
+\BuiltInTok{print}\NormalTok{(result)}
+\CommentTok{\#Output:}
+\CommentTok{\#array([[11, 22],}
+\CommentTok{\#       [13, 24],}
+\CommentTok{\#       [15, 26]])}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{indexing-and-slicing-in-numpy}{%
+\subsection{Indexing and Slicing in
+numpy:}\label{indexing-and-slicing-in-numpy}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Indexing} and \textbf{slicing} are two methods used in NumPy
+  to access and manipulate elements and subarrays within arrays. The
+  standard \textbf{square bracket \texttt{{[}{]}}} notation is used for
+  both, similar to Python lists.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Indexing is the process of accessing individual elements of an
+    array. To index a NumPy array, you specify the index position of the
+    element you want to access along each axis (dimension) of the array.
+    The index positions start from 0 and go up to one less than the
+    length of the axis.
+  \item
+    Slicing is the process of accessing a subarray of an array. To slice
+    a NumPy array, you specify a range of index positions for each axis.
+    The syntax for slicing is \texttt{{[}start:stop:step{]}}, where
+    start is the index position to start the slice, stop is the index
+    position to end the slice (exclusive), and step is the size of the
+    stride between the indices. You can omit any of these parameters,
+    and the defaults will be used (start=0, stop=length of axis,
+    step=1). \#\#\# One-Dimensional Arrays
+  \end{itemize}
+\end{itemize}
+
+Here is the 1D-Array Indexing and Slicing possible expressions:
+$$
+\begin{array}{|l|l|}
+\hline
+Expression&Description\\
+\hline
+a{[}m{]} & \text{Select element at index m, where m is an integer}\\ 
+& \text{(start counting form 0).} \\
+a{[}-m{]} & \text{Select the nth element from the end of the list,}\\ 
+& \text{where n is an integer. The last element in the list is}\\ 
+& \text{addressed as -1, the second to last element as -2, and so on.} \\
+a{[}m:n{]} & \text{Select elements with index starting at m and ending at n -
+1 (m and n are integers).} \\
+a{[}:{]} or a{[}0:-1{]} & \text{Select all elements in the given axis.} \\
+a{[}:n{]} & \text{Select elements starting with index 0 and going up to index
+n - 1 (integer).} \\
+a{[}m:{]} or a{[}m:-1{]} & \text{Select elements starting with index m
+(integer) and going up to }\\ 
+& \text{the last element in the array.} \\
+a{[}m:n:p{]} & \text{Select elements with index m through n (exclusive), with
+increment p.} \\
+a{[}::-1{]} & \text{Select all the elements, in reverse order.} \\
+\hline
+\end{array}
+$$
+
+\hypertarget{two-dimensional-arrays}{%
+\subsubsection{Two-Dimensional Arrays:}\label{two-dimensional-arrays}}
+
+Here are the possible expressions for indexing and slicing
+multidimensional arrays in NumPy
+
+$$\begin{array}{|l|l|}
+\hline
+Expression& Description\\
+\hline
+a{[}i, j{]} &\text{Select element at row i and column j, where i and j}\\ 
+& \text{are integers (start counting from 0).} \\
+a{[}i{]}{[}j{]} &\text{Another way to select element at row i and column j,}\\ 
+& \text{but less efficient than the previous expression.} \\
+a{[}i{]} &\text{Select row at index i.} \\
+a{[}:, j{]} &\text{Select all rows at column j.} \\
+a{[}i, :{]} &\text{Select all columns at row i.} \\
+a{[}start\_row:end\_row, start\_col:end\_col{]} &\text{Select a subarray that
+includes the rows starting from}\\ 
+& \text{start\_row (inclusive) and ending at
+end\_row}\\ 
+& \text{(exclusive), and the columns starting from start\_col
+}\\ 
+& \text{(inclusive) and ending at end\_col (exclusive).}\\ 
+& \text{You can omit any of
+these parameters, and the defaults}\\ 
+& \text{will be used (start=0, end=end of
+axis).} \\
+a{[}start\_row:end\_row:step{]} &\text{Select a
+subarray with a step size between the indices.} \\
+a{[}::-1, ::-1{]} &\text{Select all elements, but in reverse order along both
+axes.} \\
+\hline
+\end{array}$$
+
+Note that you can apply these indexing and slicing expressions to
+higher-dimensional arrays as well, by simply adding more indices
+separated by commas.
+
+\textbf{Examples}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+
+\CommentTok{\# 2D array indexing}
+\NormalTok{arr\_2d }\OperatorTok{=}\NormalTok{ np.array([[}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{], [}\DecValTok{4}\NormalTok{, }\DecValTok{5}\NormalTok{, }\DecValTok{6}\NormalTok{], [}\DecValTok{7}\NormalTok{, }\DecValTok{8}\NormalTok{, }\DecValTok{9}\NormalTok{]])}
+\BuiltInTok{print}\NormalTok{(arr\_2d[}\DecValTok{1}\NormalTok{][}\DecValTok{2}\NormalTok{]) }\CommentTok{\# output: 6}
+\BuiltInTok{print}\NormalTok{(arr\_2d[}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{]) }\CommentTok{\# output: 6}
+
+\CommentTok{\# 2D array slicing}
+\BuiltInTok{print}\NormalTok{(arr\_2d[:}\DecValTok{2}\NormalTok{, }\DecValTok{1}\NormalTok{:]) }\CommentTok{\# output: [[2 3]}
+                      \CommentTok{\#          [5 6]]}
+                      
+\CommentTok{\# 3D array indexing}
+\NormalTok{arr\_3d }\OperatorTok{=}\NormalTok{ np.array([[[}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{], [}\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{]], [[}\DecValTok{5}\NormalTok{, }\DecValTok{6}\NormalTok{], [}\DecValTok{7}\NormalTok{, }\DecValTok{8}\NormalTok{]]])}
+\BuiltInTok{print}\NormalTok{(arr\_3d[}\DecValTok{0}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{0}\NormalTok{]) }\CommentTok{\# output: 3}
+
+\CommentTok{\# 3D array slicing}
+\BuiltInTok{print}\NormalTok{(arr\_3d[:}\DecValTok{1}\NormalTok{, }\DecValTok{1}\NormalTok{:, :]) }\CommentTok{\# output: [[[3 4]]]}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{exercise-1-broadcasting-compatibility}{%
+\paragraph{Exercise 1: Broadcasting
+Compatibility}\label{exercise-1-broadcasting-compatibility}}
+
+\begin{itemize}
+\item
+  Determine if the following operations are possible using broadcasting:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Array A with shape (3, 4) and array B with shape (4,) are added
+    together.
+  \item
+    Array A with shape (3, 1) and array B with shape (3,) are added
+    together.
+  \item
+    Array A with shape (3, 4) and array B with shape (4, 3) are added
+    together.
+  \item
+    Array A with shape (2, 3, 4) and array B with shape (3, 4) are added
+    together.
+  \item
+    Array A with shape (2, 3, 4) and array B with shape (2, 1, 4) are
+    added together.
+  \end{itemize}
+\item
+  \textbf{Solutions:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Possible. Array B will be broadcasted to shape (3, 4) and then added
+    to array A.
+  \item
+    Possible. Array B will be broadcasted to shape (3, 1) and then added
+    to array A.
+  \item
+    Not possible. The shapes of the two arrays are incompatible because
+    their dimensions do not match.
+  \item
+    Possible. Array B will be broadcasted to shape (2, 3, 4) and then
+    added to array A.
+  \item
+    Possible. Array B will be broadcasted to shape (2, 3, 4) and then
+    added to array A.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{exercise-2-indexing-and-slicing}{%
+\paragraph{Exercise 2: Indexing and
+Slicing}\label{exercise-2-indexing-and-slicing}}
+
+\begin{itemize}
+\item
+  Given the following NumPy array:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+
+\NormalTok{A }\OperatorTok{=}\NormalTok{ np.array([[}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{],}
+\NormalTok{          [}\DecValTok{5}\NormalTok{, }\DecValTok{6}\NormalTok{, }\DecValTok{7}\NormalTok{, }\DecValTok{8}\NormalTok{],}
+\NormalTok{          [}\DecValTok{9}\NormalTok{, }\DecValTok{10}\NormalTok{, }\DecValTok{11}\NormalTok{, }\DecValTok{12}\NormalTok{]])}
+\end{Highlighting}
+\end{Shaded}
+
+  Perform the following indexing and slicing operations:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Select the element at row 0, column 2.
+  \item
+    Select the last element in the last row.
+  \item
+    Select the first two rows.
+  \item
+    Select the last two columns.
+  \item
+    Select the subarray from row 1 to row 2, and from column 1 to column
+    3.
+  \end{itemize}
+\item
+  \textbf{Solution 2:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+
+\NormalTok{A }\OperatorTok{=}\NormalTok{ np.array([[}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{],}
+\NormalTok{              [}\DecValTok{5}\NormalTok{, }\DecValTok{6}\NormalTok{, }\DecValTok{7}\NormalTok{, }\DecValTok{8}\NormalTok{],}
+\NormalTok{              [}\DecValTok{9}\NormalTok{, }\DecValTok{10}\NormalTok{, }\DecValTok{11}\NormalTok{, }\DecValTok{12}\NormalTok{]])}
+
+\CommentTok{\# 1. Select the element at row 0, column 2.}
+\BuiltInTok{print}\NormalTok{(A[}\DecValTok{0}\NormalTok{, }\DecValTok{2}\NormalTok{])}
+
+\CommentTok{\# 2. Select the last element in the last row.}
+\BuiltInTok{print}\NormalTok{(A[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{, }\OperatorTok{{-}}\DecValTok{1}\NormalTok{])}
+
+\CommentTok{\# 3. Select the first two rows.}
+\BuiltInTok{print}\NormalTok{(A[:}\DecValTok{2}\NormalTok{, :])}
+
+\CommentTok{\# 4. Select the last two columns.}
+\BuiltInTok{print}\NormalTok{(A[:, }\OperatorTok{{-}}\DecValTok{2}\NormalTok{:])}
+
+\CommentTok{\# 5. Select the subarray from row 1 to row 2, and from column 1 to column 3.}
+\BuiltInTok{print}\NormalTok{(A[}\DecValTok{1}\NormalTok{:}\DecValTok{3}\NormalTok{, }\DecValTok{1}\NormalTok{:}\DecValTok{4}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+  \hypertarget{advanced-indexing-in-numpy}{%
+  \subsubsection{Advanced Indexing in
+  numpy}\label{advanced-indexing-in-numpy}}
+
+  Advanced indexing in NumPy is a powerful feature that allows for more
+  complex and flexible indexing of arrays. There are two main types of
+  advanced indexing: boolean indexing and fancy indexing. \#\#\#\# 1.
+  Boolean Indexing: Boolean indexing allows you to select elements of an
+  array based on a boolean condition. The condition is usually based on
+  some comparison of the array's values with a scalar or another array.
+  The result of the comparison is a boolean array of the same shape as
+  the original array, where each element is True or False depending on
+  whether the condition is met or not. This boolean array can then be
+  used as an index for selecting the elements of the original array.
+
+  For example, let's say we have an array \texttt{arr}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{arr }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{, }\DecValTok{5}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+  We can create a boolean array based on a condition, such as:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mask }\OperatorTok{=}\NormalTok{ arr }\OperatorTok{\textgreater{}} \DecValTok{2}
+\end{Highlighting}
+\end{Shaded}
+
+This will create a boolean array of the same shape as \texttt{arr},
+where each element is True if the corresponding element in \texttt{arr}
+is greater than 2, and False otherwise:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{array([}\VariableTok{False}\NormalTok{, }\VariableTok{False}\NormalTok{,  }\VariableTok{True}\NormalTok{,  }\VariableTok{True}\NormalTok{,  }\VariableTok{True}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+We can then use this boolean array as an index for selecting elements of
+\texttt{arr}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{new\_arr }\OperatorTok{=}\NormalTok{ arr[mask]}
+\end{Highlighting}
+\end{Shaded}
+
+This will create a new array \texttt{new\_arr} containing only the
+elements of arr where the corresponding element in \texttt{mask} is
+True:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{array([}\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{, }\DecValTok{5}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+We can simply get the \texttt{new\_arr} by:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{arr}\OperatorTok{=}\NormalTok{np.array([}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{5}\NormalTok{])}
+\NormalTok{new\_arr}\OperatorTok{=}\NormalTok{arr[arr}\OperatorTok{\textgreater{}}\DecValTok{2}\NormalTok{]}
+\BuiltInTok{print}\NormalTok{(new\_arr)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{fancy-indexing}{%
+\paragraph{2. Fancy Indexing}\label{fancy-indexing}}
+
+\begin{verbatim}
+Fancy indexing: Fancy indexing allows you to select elements of an array using integer arrays as indices.
+This means that you can specify exactly which elements you want to select, and in what order, by passing in one or more integer arrays as indices.
+\end{verbatim}
+
+For example, let's say we have an array arr:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{arr }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{, }\DecValTok{5}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+We can use fancy indexing to select specific elements of \texttt{arr},
+by passing in a list of indices:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{indices }\OperatorTok{=}\NormalTok{ [}\DecValTok{1}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{]}
+\NormalTok{new\_arr }\OperatorTok{=}\NormalTok{ arr[indices]}
+\end{Highlighting}
+\end{Shaded}
+
+This will create a new array new\_arr containing only the elements of
+arr with indices 1, 3, and 4:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{array([}\DecValTok{2}\NormalTok{, }\DecValTok{4}\NormalTok{, }\DecValTok{5}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+We can also use fancy indexing to select specific elements of a
+multi-dimensional array. In this case, we need to pass in one or more
+arrays of indices, where each array corresponds to a different axis of
+the array. For example, let's say we have a 2D array arr:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{arr }\OperatorTok{=}\NormalTok{ np.array([[}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{], [}\DecValTok{4}\NormalTok{, }\DecValTok{5}\NormalTok{, }\DecValTok{6}\NormalTok{], [}\DecValTok{7}\NormalTok{, }\DecValTok{8}\NormalTok{, }\DecValTok{9}\NormalTok{]])}
+\end{Highlighting}
+\end{Shaded}
+
+We can use fancy indexing to select specific elements of \texttt{arr},
+by passing in two arrays of indices:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{row\_indices }\OperatorTok{=}\NormalTok{ [}\DecValTok{0}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{]}
+\NormalTok{col\_indices }\OperatorTok{=}\NormalTok{ [}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{0}\NormalTok{]}
+\NormalTok{new\_arr }\OperatorTok{=}\NormalTok{ arr[row\_indices, col\_indices]}
+\end{Highlighting}
+\end{Shaded}
+
+This will create a new array new\_arr containing the elements of arr at
+the positions (0, 1), (1, 2), and (2, 0):
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{array([}\DecValTok{2}\NormalTok{, }\DecValTok{6}\NormalTok{, }\DecValTok{7}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Exercise:} Extract from the array
+\texttt{np.array({[}3,4,6,10,24,89,45,43,46,99,100{]})} with Boolean
+masking all the number
+
+\begin{itemize}
+\tightlist
+\item
+  which are not divisible by 3.
+\item
+  which are divisible by 5.
+\item
+  which are divisible by 3 and 5.
+\item
+  which are divisible by 3 and set them to 42.
+
+  Solution
+
+\begin{Shaded}
+\begin{Highlighting}[]
+  \ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+\NormalTok{  A }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{10}\NormalTok{,}\DecValTok{24}\NormalTok{,}\DecValTok{89}\NormalTok{,}\DecValTok{45}\NormalTok{,}\DecValTok{43}\NormalTok{,}\DecValTok{46}\NormalTok{,}\DecValTok{99}\NormalTok{,}\DecValTok{100}\NormalTok{])}
+\NormalTok{  div3 }\OperatorTok{=}\NormalTok{ A[A}\OperatorTok{\%}\DecValTok{3}\OperatorTok{!=}\DecValTok{0}\NormalTok{]}
+  \BuiltInTok{print}\NormalTok{(}\StringTok{"Elements of A not divisible by 3:"}\NormalTok{)}
+  \BuiltInTok{print}\NormalTok{(div3)}
+\NormalTok{  div5 }\OperatorTok{=}\NormalTok{ A[A}\OperatorTok{\%}\DecValTok{5}\OperatorTok{==}\DecValTok{0}\NormalTok{]}
+  \BuiltInTok{print}\NormalTok{(}\StringTok{"Elements of A divisible by 5:"}\NormalTok{)}
+  \BuiltInTok{print}\NormalTok{(div5)}
+  \BuiltInTok{print}\NormalTok{(}\StringTok{"Elements of A, which are divisible by 3 and 5:"}\NormalTok{)}
+  \BuiltInTok{print}\NormalTok{(A[(A}\OperatorTok{\%}\DecValTok{3}\OperatorTok{==}\DecValTok{0}\NormalTok{) }\OperatorTok{\&}\NormalTok{ (A}\OperatorTok{\%}\DecValTok{5}\OperatorTok{==}\DecValTok{0}\NormalTok{)])}
+  \BuiltInTok{print}\NormalTok{(}\StringTok{"{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}{-}"}\NormalTok{)}
+  \CommentTok{\#}
+\NormalTok{  A[A}\OperatorTok{\%}\DecValTok{3}\OperatorTok{==}\DecValTok{0}\NormalTok{] }\OperatorTok{=} \DecValTok{42}
+  \BuiltInTok{print}\NormalTok{(}\StringTok{"""New values of A after setting the elements of A,}
+\StringTok{  which are divisible by 3, to 42:"""}\NormalTok{)}
+  \BuiltInTok{print}\NormalTok{(A)}
+\end{Highlighting}
+\end{Shaded}
+\end{itemize}
+
+\hypertarget{reading-and-writing-data-files-in-numpy}{%
+\subsection{Reading and Writing Data files in
+numpy}\label{reading-and-writing-data-files-in-numpy}}
+
+\begin{itemize}
+\item ~
+  \hypertarget{savetxt}{%
+  \subsubsection{savetxt:}\label{savetxt}}
+
+  This function allows you to save an array to a text file. You can
+  specify the file name, delimiter, and various other options. Here's an
+  example:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+
+\CommentTok{\# create an array}
+\NormalTok{a }\OperatorTok{=}\NormalTok{ np.array([[}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{], [}\DecValTok{4}\NormalTok{, }\DecValTok{5}\NormalTok{, }\DecValTok{6}\NormalTok{]])}
+
+\CommentTok{\# save the array to a text file}
+\NormalTok{np.savetxt(}\StringTok{\textquotesingle{}myarray.txt\textquotesingle{}}\NormalTok{, a, delimiter}\OperatorTok{=}\StringTok{\textquotesingle{},\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+  This will create a file called myarray.txt with the following
+  contents:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FloatTok{1.000000000000000000e+00}\NormalTok{,}\FloatTok{2.000000000000000000e+00}\NormalTok{,}\FloatTok{3.000000000000000000e+00}
+\FloatTok{4.000000000000000000e+00}\NormalTok{,}\FloatTok{5.000000000000000000e+00}\NormalTok{,}\FloatTok{6.000000000000000000e+00}
+\end{Highlighting}
+\end{Shaded}
+\item ~
+  \hypertarget{loadtxt}{%
+  \subsubsection{loadtxt:}\label{loadtxt}}
+
+  This function allows you to load data from a text file into an array.
+  You can specify the file name, delimiter, and various other options.
+  Here's an example: ```python import numpy as np
+
+  \# load data from a text file a = np.loadtxt(`myarray.txt',
+  delimiter=`,')
+
+  \# print the array print(a) ``` This will print:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{[[}\FloatTok{1.} \FloatTok{2.} \FloatTok{3.}\NormalTok{]}
+\NormalTok{ [}\FloatTok{4.} \FloatTok{5.} \FloatTok{6.}\NormalTok{]]}
+\end{Highlighting}
+\end{Shaded}
+\item ~
+  \hypertarget{tofile}{%
+  \subsubsection{tofile:}\label{tofile}}
+
+  This function allows you to save an array to a binary file. You can
+  specify the file name and various other options. Here's an example:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+
+\CommentTok{\# create an array}
+\NormalTok{a }\OperatorTok{=}\NormalTok{ np.array([[}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{], [}\DecValTok{4}\NormalTok{, }\DecValTok{5}\NormalTok{, }\DecValTok{6}\NormalTok{]])}
+
+\CommentTok{\# save the array to a binary file}
+\NormalTok{a.tofile(}\StringTok{\textquotesingle{}myarray.bin\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+\item ~
+  \hypertarget{fromfile}{%
+  \subsubsection{fromfile:}\label{fromfile}}
+
+  This function allows you to load data from a binary file into an
+  array. You can specify the file name and various other options. Here's
+  an example:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+
+\CommentTok{\# load data from a binary file}
+\NormalTok{a }\OperatorTok{=}\NormalTok{ np.fromfile(}\StringTok{\textquotesingle{}myarray.bin\textquotesingle{}}\NormalTok{, dtype}\OperatorTok{=}\NormalTok{np.int32)}
+
+\CommentTok{\# reshape the array}
+\NormalTok{a }\OperatorTok{=}\NormalTok{ a.reshape((}\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{))}
+
+\CommentTok{\# print the array}
+\BuiltInTok{print}\NormalTok{(a)}
+\end{Highlighting}
+\end{Shaded}
+
+  This will print:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{[[}\DecValTok{1} \DecValTok{2} \DecValTok{3}\NormalTok{]}
+\NormalTok{ [}\DecValTok{4} \DecValTok{5} \DecValTok{6}\NormalTok{]]}
+\end{Highlighting}
+\end{Shaded}
+\item ~
+  \hypertarget{save}{%
+  \subsubsection{save:}\label{save}}
+
+  This function allows you to save an array to a NumPy binary file. You
+  can specify the file name and various other options. Here's an
+  example:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+
+\CommentTok{\# create an array}
+\NormalTok{a }\OperatorTok{=}\NormalTok{ np.array([[}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{], [}\DecValTok{4}\NormalTok{, }\DecValTok{5}\NormalTok{, }\DecValTok{6}\NormalTok{]])}
+
+\CommentTok{\# save the array to a NumPy binary file}
+\NormalTok{np.save(}\StringTok{\textquotesingle{}myarray.npy\textquotesingle{}}\NormalTok{, a)}
+\end{Highlighting}
+\end{Shaded}
+\item ~
+  \hypertarget{load}{%
+  \subsubsection{load:}\label{load}}
+
+  This function allows you to load data from a NumPy binary file into an
+  array. You can specify the file name and various other options. Here's
+  an example: ```python import numpy as np
+
+  \# load data from a NumPy binary file a = np.load(`myarray.npy')
+
+  \# print the array print(a) ```
+
+  This will print:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{[[}\DecValTok{1} \DecValTok{2} \DecValTok{3}\NormalTok{]}
+\NormalTok{ [}\DecValTok{4} \DecValTok{5} \DecValTok{6}\NormalTok{]]}
+\end{Highlighting}
+\end{Shaded}
+\end{itemize}
 
 
 

@@ -1,0 +1,16 @@
+\BOOKMARK [1][-]{section.1}{What's Matplotlib?}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{How to import Matplotlib}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Figure anatomy in matplotlib }{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Basic Plotting}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Line plots and Scatter Plots}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Calculate y values for the sin function}{}% 6
+\BOOKMARK [1][-]{section.4}{Plot the sine function}{}% 7
+\BOOKMARK [1][-]{section.5}{Use multiple subplots \(axes\)}{}% 8
+\BOOKMARK [1][-]{section.6}{Labels, Legends and Customization}{}% 9
+\BOOKMARK [2][-]{subsection.6.1}{Labels and Legends}{section.6}% 10
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Plot legend}{subsection.6.1}% 11
+\BOOKMARK [2][-]{subsection.6.2}{Customizing Plots}{section.6}% 12
+\BOOKMARK [1][-]{section.7}{More Advanced Plotting}{}% 13
+\BOOKMARK [2][-]{subsection.7.1}{Polar Plots}{section.7}% 14
+\BOOKMARK [2][-]{subsection.7.2}{Histograms}{section.7}% 15
+\BOOKMARK [2][-]{subsection.7.3}{Bar Plot}{section.7}% 16

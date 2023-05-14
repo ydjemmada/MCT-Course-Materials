@@ -1,0 +1,28 @@
+\BOOKMARK [1][-]{section.1}{What's Numpy?}{}% 1
+\BOOKMARK [1][-]{section.2}{How to install NumPy:}{}% 2
+\BOOKMARK [1][-]{section.3}{NumPy N-dimensional array \(ndarray\):}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{How to create ndarray:}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Some important NumPy array creation functions:}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Why not just use Python lists for calculations instead of creating a new type of array using numpy?}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Data types in numpy:}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.5}{Getting arrays dimensions and Data type in numpy}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.6}{Array mathematics in numpy:}{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.6.1}{Arithmetic Operations}{subsection.3.6}% 10
+\BOOKMARK [3][-]{subsubsection.3.6.2}{Comparison}{subsection.3.6}% 11
+\BOOKMARK [3][-]{subsubsection.3.6.3}{Arrays statistics functions:}{subsection.3.6}% 12
+\BOOKMARK [3][-]{subsubsection.3.6.4}{Arrays algebraic and form operations:}{subsection.3.6}% 13
+\BOOKMARK [3][-]{subsubsection.3.6.5}{Splitting:}{subsection.3.6}% 14
+\BOOKMARK [3][-]{subsubsection.3.6.6}{flattened array}{subsection.3.6}% 15
+\BOOKMARK [2][-]{subsection.3.7}{Copying Arrays}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.8}{Sorting Arrays}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.9}{Broadcasting:}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.10}{Indexing and Slicing in numpy:}{section.3}% 19
+\BOOKMARK [3][-]{subsubsection.3.10.1}{Two-Dimensional Arrays:}{subsection.3.10}% 20
+\BOOKMARK [3][-]{subsubsection.3.10.2}{Advanced Indexing in numpy}{subsection.3.10}% 21
+\BOOKMARK [2][-]{subsection.3.11}{Reading and Writing Data files in numpy}{section.3}% 22
+\BOOKMARK [3][-]{subsubsection.3.11.1}{savetxt:}{subsection.3.11}% 23
+\BOOKMARK [3][-]{subsubsection.3.11.2}{loadtxt:}{subsection.3.11}% 24
+\BOOKMARK [3][-]{subsubsection.3.11.3}{tofile:}{subsection.3.11}% 25
+\BOOKMARK [3][-]{subsubsection.3.11.4}{fromfile:}{subsection.3.11}% 26
+\BOOKMARK [3][-]{subsubsection.3.11.5}{save:}{subsection.3.11}% 27
+\BOOKMARK [3][-]{subsubsection.3.11.6}{load:}{subsection.3.11}% 28
